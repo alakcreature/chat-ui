@@ -1,0 +1,130 @@
+.App {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid;
+}
+
+.selected {
+  grid-template-columns: 1fr 1fr;
+}
+
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.chat-container {
+  border-right: 1px solid gray;
+}
+
+.header {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.header input {
+  outline: none;
+  border: none;
+  width: 90%;
+  padding: 20px;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border-right: 1px solid #f0f0f0;
+  height: 80vh;
+    overflow-y: auto;
+}
+
+.chat-card {
+  cursor: pointer;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.details {
+    display: flex;
+}
+
+.selected {
+  background: #f1f3f6;
+}
+
+img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.chat-card h1 {
+  font-size: 1rem;
+}
+
+.chat-card p {
+  font-size: 0.9rem;
+}
+
+.chat-window {
+  padding-left: 10px;
+}
+
+.chat-window input {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-top: 1px solid grey;
+  padding-top: 10px;
+}
+
+.chatwindow-header {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.chatwindow-header img {
+  width: 30px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.messagewindow-pane {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.message-pane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.message-list {
+  height: 80vh;
+  overflow-y: auto;
+  /* display: flex;s */
+  /* flex-direction: column-reverse; */
+}
+
+.no-message {
+}
+
+.right {
+  text-align: right;
+  /* width: fit-content; */
+  margin-bottom: 20px;
+}
+
+.right span {
+  padding: 10px;
+  background: #027cd5;
+}
